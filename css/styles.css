@@ -1,0 +1,685 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif; /* Cambia el tipo de letra a Geneva */
+}
+
+* {
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina el relleno predeterminado */
+  text-decoration: none; /* Elimina la decoración de texto predeterminada */
+  list-style: none; /* Elimina los estilos de la lista predeterminada */
+  box-sizing: border-box; /* Hace que el tamaño de los elementos incluya el relleno y el borde */
+}
+
+header {
+  position: sticky; /* Hace que el encabezado se mantenga fijo mientras se desplaza */
+  top: 0; /* Fija el encabezado en la parte superior de la ventana */
+  z-index: 1000; /* Controla el orden de apilamiento del encabezado */
+}
+
+nav {
+  background: #fff; /* Color de fondo de la barra de navegación */
+  height: 80px; /* Altura de la barra de navegación */
+  width: 100%; /* Ancho de la barra de navegación */
+  padding: 0 30px;
+  display: flex;
+}
+
+nav ul {
+  float: right; /* Alinea la lista de elementos a la derecha */
+  margin-right: 20px; /* Margen derecho de la lista de elementos */
+}
+
+nav ul li {
+  display: inline-block; /* Hace que los elementos de la lista se muestren en línea */
+  line-height: 80px; /* Alinea verticalmente el texto en el centro de la barra de navegación */
+  margin: 0 5px; /* Margen entre los elementos de la lista */
+}
+
+nav ul li a {
+  color: #000; /* Color del texto de los enlaces */
+  font-size: 18px; /* Tamaño de la fuente de los enlaces */
+  padding: 7px 13px; /* Relleno de los enlaces */
+  border-radius: 3px; /* Borde redondeado de los enlaces */
+  text-transform: capitalize; /* Transforma el texto a mayúsculas */
+  font-weight: 500;
+}
+
+#logo {
+  font-family: "MuseoModerno", sans-serif;
+  color: #000;
+  margin-right: 700px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.banner {
+  background: url('https://img.freepik.com/foto-gratis/movimiento-borroso-lleno-gente-calle-ciudad-iluminada-vida-nocturna-generada-ai_188544-41902.jpg?t=st=1714831789~exp=1714835389~hmac=c8cf2406e230b959531953acf3662c92a2f5f42fe202f78d2b7ab3bba36dd74c&w=1800'); /* Fondo degradado del banner */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerB {
+  width: 50%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  display: grid; /* Usa un diseño de cuadrícula para el contenedor */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(20rem, 1fr)
+  ); /* Distribuye los elementos de forma automática */
+  grid-gap: 2rem; /* Espacio entre los elementos de la cuadrícula */
+}
+
+.col1 {
+  display: flex; /* Hace que los elementos de la columna se muestren en línea */
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-content: center; /* Alinea los elementos horizontalmente */
+}
+
+.col2 {
+  padding: 1rem 2rem; /* Relleno de la segunda columna */
+  display: flex; /* Hace que los elementos de la columna se muestren en línea */
+  justify-content: center; /* Alinea los elementos horizontalmente */
+  flex-direction: column; /* Muestra los elementos en columna */
+}
+
+#banner-title {
+  text-align: center;
+  color: #fff;
+  font-size: 74px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+#txtBanner {
+  text-align: justify; /* Alineación justificada del texto */
+  margin: 2rem 0; /* Margen del texto */
+  font-size: 36px; /* Tamaño del texto */
+  line-height: 3rem; /* Altura de línea del texto */
+  text-align: center; /* Alineación justificada del texto */
+  color: #fff;
+  font-weight: 500;
+}
+
+#banner-btn {
+  text-align: center;
+  font-size: 24px;
+  width: 250px;
+  height: 60px;
+  background-color: #0038ff;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 15px 13px -11px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+#banner-btn a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+#banner-btn:hover {
+  background-color: #2050fd;
+  transform: scale(1.05);
+}
+
+.beneficios {
+  padding: 3rem 0; /* Relleno de la sección de servicios */
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.subBeneficios {
+  text-align: center; /* Alinea el texto al centro */
+  padding-bottom: 3rem; /* Espacio inferior del subtítulo */
+  color: #0074e4; /* Color del texto */
+}
+
+.containerS {
+  width: 90%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  display: grid; /* Usa un diseño de cuadrícula para el contenedor */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(20rem, 1fr)
+  ); /* Distribuye los elementos de forma automática */
+  grid-gap: 3rem; /* Espacio entre los elementos de la cuadrícula */
+}
+
+.boxS {
+  padding: 3rem 5rem; /* Relleno de los cuadros */
+  display: flex; /* Hace que los elementos de los cuadros se muestren en línea */
+  flex-direction: column; /* Muestra los elementos en columna */
+  align-items: center; /* Alinea los elementos al centro */
+  justify-content: center; /* Alinea los elementos al centro */
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1); /* Sombra de los cuadros */
+  border-radius: 10px; /* Borde redondeado de los cuadros */
+}
+
+.boxS img {
+  width: 100px; /* Ancho de las imágenes */
+  margin-bottom: 1rem; /* Margen inferior de las imágenes */
+}
+
+h3 {
+  color: #333; /* Color del título */
+  font-size: 1.5rem; /* Tamaño del título */
+  margin-bottom: 1rem; /* Margen inferior del título */
+}
+
+.boxS p {
+  text-align: justify; /* Alineación justificada del texto */
+  font-size: 1.5rem; /* Tamaño del texto */
+}
+
+.subBeneficios h2 {
+  color: #333; /* Color del subtítulo */
+  font-size: 3rem; /* Tamaño del subtítulo */
+  margin-bottom: 1.5rem; /* Margen inferior del subtítulo */
+  font-weight: 900;
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.benef-horario {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 100px;
+}
+
+.benef-info {
+  text-align: right;
+  width: 50%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  flex-direction: column;
+}
+
+.benef-title {
+  text-align: right;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+.benef-text {
+  text-align: right;
+  font-weight: 400;
+  font-size: 24px;
+  padding-left: 300px;
+}
+
+#benef-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#benef-btn a {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  width: 250px;
+  height: 60px;
+  background-color: #0038ff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 15px 13px -11px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+#benef-btn a:hover {
+  background-color: #2050fd;
+  transform: scale(1.05);
+}
+
+.benef-img {
+  width: 50%;
+}
+
+.benef-ahorro {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 100px;
+}
+
+.ahorro-img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.ahorro-info {
+  width: 50%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+}
+
+.ahorro-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+.ahorro-text {
+  text-align: left;
+  font-weight: 400;
+  font-size: 24px;
+  padding-right: 300px;
+}
+
+#ahorro-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#ahorro-btn a {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  width: 250px;
+  height: 60px;
+  background-color: #0038ff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 15px 13px -11px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+#ahorro-btn a:hover {
+  background-color: #2050fd;
+  transform: scale(1.05);
+}
+
+section.equipo {
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #0074e4
+  ); /* Fondo degradado de la sección de equipo */
+  padding: 3rem 0; /* Relleno de la sección de equipo */
+  display: flex; /* Hace que los elementos de la sección se muestren en línea */
+  justify-content: center; /* Alinea los elementos horizontalmente */
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.containerE {
+  width: 90%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  display: grid; /* Usa un diseño de cuadrícula para el contenedor */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(20rem, 1fr)
+  ); /* Distribuye los elementos de forma automática */
+  grid-gap: 2rem; /* Espacio entre los elementos de la cuadrícula */
+}
+
+.boxE {
+  padding: 1rem 2rem; /* Relleno de los cuadros */
+  display: flex; /* Hace que los elementos de los cuadros se muestren en línea */
+  justify-content: center; /* Alinea los elementos horizontalmente */
+  flex-direction: column; /* Muestra los elementos en columna */
+  text-align: center; /* Alineación del texto al centro */
+  box-shadow: 0px 0px 55px 5px rgba(0, 0, 0, 0.2); /* Sombra de los cuadros */
+}
+
+.imgEquipo {
+  width: 70%; /* Ancho de la imagen */
+  align-self: center; /* Alinea la imagen al centro */
+}
+
+#title-equipo {
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 36px;
+}
+
+#txtEquipo {
+  margin: 2rem 0; /* Margen del texto */
+  font-size: 24px; /* Tamaño del texto */
+  line-height: 2rem; /* Altura de línea del texto */
+  text-align: justify; /* Alineación justificada del texto */
+}
+
+.planes {
+  padding: 3rem 0; /* Relleno de la sección de Tarifas */
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.subPlanes h2 {
+  color: #333; /* Color del texto del título */
+  font-size: 3rem; /* Tamaño del texto del título */
+  margin-bottom: 1.5rem; /* Margen inferior del título */
+  font-weight: 900;
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.comentarios {
+  padding: 3rem 0; /* Relleno de la sección de Tarifas */
+  text-align: center; /* Alinea el contenido al centro */
+}
+
+.subComentarios h2 {
+  color: #333; /* Color del texto del título */
+  font-size: 3rem; /* Tamaño del texto del título */
+  margin-bottom: 1.5rem; /* Margen inferior del título */
+  font-weight: 900;
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.containerT {
+  display: flex; /* Muestra los cuadros de tarifas en línea */
+  justify-content: space-around; /* Distribuye los cuadros de tarifas uniformemente */
+  align-items: center; /* Alinea los cuadros de tarifas verticalmente */
+}
+
+.boxT {
+  background-color: #ffffff; /* Color de fondo de los cuadros de tarifas */
+  border-radius: 10px; /* Borde redondeado de los cuadros de tarifas */
+  padding: 2rem; /* Relleno de los cuadros de tarifas */
+  width: 30%; /* Ancho de los cuadros de tarifas */
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.1); /* Sombra de los cuadros de tarifas */
+}
+
+.boxT h3 {
+  color: #333; /* Color del título de las tarifas */
+  font-size: 1.5rem; /* Tamaño del título de las tarifas */
+  margin-bottom: 1rem; /* Margen inferior del título de las tarifas */
+}
+
+.boxT h3:last-child {
+  color: #333; /* Color del precio de las tarifas */
+  font-size: 2rem; /* Tamaño del precio de las tarifas */
+  margin-top: 1rem; /* Margen superior del precio de las tarifas */
+}
+
+.boxT ul {
+  list-style-type: none; /* Elimina los estilos de lista */
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding-left: 0; /* Elimina el relleno izquierdo */
+}
+
+.boxT ul li {
+  margin-bottom: 0.5rem; /* Margen inferior de los elementos de la lista */
+}
+
+.faq {
+  background-color: #ffffff; /* Color de fondo */
+  padding: 3rem 0; /* Relleno */
+  text-align: center; /* Alineación del texto al centro */
+}
+
+.faq-container {
+  width: 90%; /* Ancho del contenedor */
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.faq-title {
+  color: #333; /* Color del título */
+  font-size: 2rem; /* Tamaño del título */
+  margin-bottom: 2rem; /* Margen inferior */
+  font-weight: 900;
+}
+
+.nav-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-buttons li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.nav-buttons li a {
+  display: inline-block;
+  padding: 5px 20px; /* Modificado el valor del padding vertical */
+  line-height: 2; /* Reducir la altura del texto dentro del botón */
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 2px 15px 13px -11px rgba(0, 0, 0, 0.75);
+}
+
+#outline-btn {
+  color: #0038ff;
+  background-color: none;
+  border: 6px solid #0038ff;
+}
+
+#outline-btn:hover {
+  color: #fff;
+  background-color: #0038ff;
+}
+
+#raised-btn {
+  color: #fff;
+  background-color: #0038ff;
+  border: 6px solid #0038ff;
+}
+
+#raised-btn:hover {
+  color: #0038ff;
+  background-color: #fff;
+}
+
+.section-planes {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.section-planes .jost-component {
+  font-size: 64px;
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.planes-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.plan {
+  width: 600px;
+  height: 617px;
+  background-color: #ffffff;
+  border: 2px solid rgb(126, 112, 112);
+  border-radius: 10px;
+  padding: 15px 50px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.plan h3 {
+  font-size: 96px;
+  font-weight: 500;
+  margin-top: 4px;
+  margin-bottom: 1px;
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.plan p {
+  font-size: 16px;
+  margin-top: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.plan ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.plan ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.check {
+  font-size: 20px;
+  color: green;
+  margin-right: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.custom-check {
+  width: 22px;
+  height: 22px;
+  background-image: url("https://i.imgur.com/Y8dnhhi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.feature1 {
+  word-break: break-word;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-weight: 570;
+}
+.feature2 {
+  word-break: break-word;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-weight: 570;
+  margin-bottom: 15px;
+}
+.app {
+  display: block;
+  margin-left: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.btn1 {
+  display: block;
+  margin: 95px auto;
+  background-color: #0038ff;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  width: 277px;
+  height: 69px;
+  border-radius: 30px;
+}
+.btn2 {
+  display: block;
+  margin: 50px auto;
+  background-color: #0038ff;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  width: 277px;
+  height: 69px;
+  border-radius: 30px;
+}
+
+.btn1:hover,
+.btn2:hover {
+  background-color: #2050fd;
+}
+
+.plan .mensual {
+  position: relative;
+  top: -25px;
+  font-weight: 570;
+  font-size: 36px;
+}
+
+.subAliados h2 {
+  color: #333; /* Color del texto del título */
+  font-size: 3rem; /* Tamaño del texto del título */
+  margin-bottom: 1.5rem; /* Margen inferior del título */
+  font-weight: 900;
+  font-family: "MuseoModerno", sans-serif;
+}
+
+/* Preguntas Frecuentes */
+
+.faq-section {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+details {
+  width: 1000px;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1); /* Sombreado para los detalles */
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 10px;
+}
+details:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombreado más intenso al pasar el mouse */
+}
+
+details p {
+  font-size: 20px;
+  margin: 10px;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 26px;
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary i {
+  margin: 0 10px;
+}
+
+footer {
+  background-color: #001027;
+}
